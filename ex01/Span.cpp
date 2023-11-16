@@ -31,9 +31,9 @@ Span	&Span::operator=(const Span &src)
 
 
 /**
- * @brief  puts number into the vector of the Span class
- * @note   also the _pos is counted up, if all elements are filled, an exception is thrown
- * @param  number: the integer to add
+ * puts number into the vector of the Span class
+ * also the _pos is counted up, if all elements are filled, an exception is thrown
+ * takes number: the integer to add
  */
 void	Span::addNumber(int number)
 {
@@ -50,9 +50,9 @@ void	Span::addNumber(int number)
 }
 
 /**
- * @brief  fills range elements with random numbers
- * @note   the random numbers depend on the time_t seed that is passsed
- * @param  range: number of elements to fill
+ * fills range elements with random numbers
+ * the random numbers depend on the time_t seed that is passsed
+ * takes a range: number of elements to fill
  */
 void	Span::addNumber(unsigned int range, time_t seed)
 {
