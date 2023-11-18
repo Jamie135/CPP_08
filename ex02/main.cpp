@@ -3,22 +3,26 @@
 int	main()
 {
 	std::cout << std::endl;
-	std::cout << "------------------Test ONE------------------" << std::endl;
+	std::cout << "------------------Test MutantStack------------------" << std::endl;
 	std::cout << std::endl;
     MutantStack<int> mstack;
-    mstack.push(5);
+    mstack.push(5); //ajoute 5 au top du stack
     mstack.push(17);
-    std::cout << mstack.top() << std::endl;
-    mstack.pop();
-    std::cout << mstack.size() << std::endl;
+    std::cout << mstack.top() << std::endl; //affiche top du stack
+    mstack.pop(); //retire l'element au top stack
+    std::cout << mstack.size() << std::endl; //affiche taille du stack
     mstack.push(3);
     mstack.push(5);
     mstack.push(737);
     mstack.push(0);
     MutantStack<int>::iterator it = mstack.begin();
     MutantStack<int>::iterator ite = mstack.end();
+	std::cout << "it: " << *it << std::endl;
     ++it;
+	// std::cout << "it: " << *it << std::endl;
     --it;
+	// std::cout << "it: " << *it << std::endl;
+	std::cout << "ite: " << *ite << std::endl;
     while (it != ite)
     {
         std::cout << *it << std::endl;
@@ -27,7 +31,7 @@ int	main()
     
 
     std::cout << std::endl;
-	std::cout << "------------------Test TWO------------------" << std::endl;
+	std::cout << "------------------Test List------------------" << std::endl;
 	std::cout << std::endl;
     
     std::list<int> l;
