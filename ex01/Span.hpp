@@ -19,7 +19,7 @@ class Span
 
 	public:
 		Span(unsigned int N);
-		Span(const Span &src);
+		Span(const Span &copy);
 		~Span();
 		Span &operator=(const Span &src);
 

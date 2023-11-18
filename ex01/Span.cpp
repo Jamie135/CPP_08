@@ -10,10 +10,10 @@ Span::Span(unsigned int N): _size(N), _pos(0)
 	this->_storage.reserve(this->getSize());
 }
 
-Span::Span(const Span &src): _size(src.getSize()), _pos(src.getPos())
+Span::Span(const Span &copy): _size(copy.getSize()), _pos(copy.getPos())
 {
 	// std::cout << "Span Copy Constructor called" << std::endl;
-	*this = src;
+	*this = copy;
 }
 
 Span::~Span()
