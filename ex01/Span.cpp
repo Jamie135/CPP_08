@@ -46,7 +46,7 @@ void	Span::addNumber(int number)
 		this->_pos++;
 		this->_storage.push_back(number);
 	}
-	// std::cout << "added " << number << std::endl; // prints each number that got added
+	std::cout << "added " << number << std::endl; // prints each number that got added
 }
 
 /**
